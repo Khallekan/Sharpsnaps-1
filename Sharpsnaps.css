@@ -179,10 +179,6 @@ a.padding {
 
 @media only screen and (max-width: 768px){
     .big-box{
-        width: 100vw;
-    height: auto;
-    /* padding: 2vh 3vw; */
-    border-radius: 0.5em;
     background: linear-gradient(90deg, #000000 21%, #ffffff 21%);
     display: grid;
     grid-template-columns: 1fr;
