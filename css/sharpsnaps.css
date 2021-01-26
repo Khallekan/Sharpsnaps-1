@@ -285,8 +285,36 @@ body .big-box > * {
   .big-box .header-logo {
     font-size: 5vw;
   }
+  .big-box .header .nav {
+    position: relative;
+  }
+  .big-box .header .nav .list::before, .big-box .header .nav .list::after {
+    background-color: white;
+  }
   .big-box .header .nav ul {
-    display: none;
+    padding: 50px;
+    position: absolute;
+    z-index: 4;
+    top: 100%;
+    right: 0%;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    visibility: hidden;
   }
   .big-box .header .nav .hamburger {
     display: block;
@@ -324,6 +352,7 @@ body .big-box > * {
     width: 8vw;
     height: 8vw;
     border-color: white;
+    padding: 2vw;
   }
   .big-box .footer .buttons > * {
     width: 8vw;

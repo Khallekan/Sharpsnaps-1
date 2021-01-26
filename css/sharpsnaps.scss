@@ -6,9 +6,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-img {
-  // width: 100%;
-}
 a {
   text-decoration: none;
   color: inherit;
@@ -211,8 +208,28 @@ body {
         font-size: 5vw;
       }
       .nav {
+        position: relative;
+        .list {
+          &::before,
+          &::after {
+            background-color: white;
+          }
+        }
         ul {
-          display: none;
+          padding: 50px;
+          position: absolute;
+          z-index: 4;
+          top: 100%;
+          right: 0%;
+          width: 100vw;
+          height: 100vh;
+          background: rgba(0, 0, 0, 0.9);
+          color: white;
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: flex-start;
+          align-items: flex-end;
+          visibility: hidden;
         }
         .hamburger {
           display: block;
@@ -252,6 +269,7 @@ body {
           width: 8vw;
           height: 8vw;
           border-color: white;
+          padding: 2vw;
         }
       }
       .buttons {
