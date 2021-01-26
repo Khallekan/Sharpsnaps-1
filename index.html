@@ -1,109 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Sharpsnaps.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/sharpsnaps.css" />
     <title>SharpSnaps.</title>
-</head>
+  </head>
 
-<body>
-    <section class="big-box center">
-        <div class="top">
-            <!--<div class="cover">-->
-            <h4>SharpSnaps.</h4>
-            <nav class="navbar">
-                <ul class="nav-ul" id="nav-ul">
-                    <li><a href="#about">About</a></li>
-                    <li> <a href="#menu">Connect</a></li>
-                    <li> <a href="#gallery">More</a></li>
-                </ul>
+  <body>
+    <main class="big-box center">
+      <section class="header">
+        <h1 class="header-logo">SharpSnaps.</h1>
+        <nav class="nav">
+          <ul class="nav-ul" id="nav-ul">
+            <li class="list"><a href="#about">About</a></li>
+            <li class="list"><a href="#menu">Connect</a></li>
+            <li class="list"><a href="#gallery">More</a></li>
+          </ul>
 
-                <button class="hamburger" id="hamburger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </button>
-            </nav>
-            <!-- </div> -->
+          <button class="hamburger" id="hamburger">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="11">
+              <g>
+                <path d="M0 0h24v1H0zM0 5h24v1H0zM0 10h24v1H0z" />
+              </g>
+            </svg>
+          </button>
+        </nav>
+      </section>
+      <section class="gallery">
+        <div class="container">
+          <div class="image">
+            <img
+              src="./images/ailbhe-flynn-jkZs3Oi9pq0-unsplash.jpg"
+              alt="Girl with camera"
+              class="middle-img"
+            />
+            <div class="detail">
+              <h1 class="detail-heading">Meet the best !</h1>
+              <p class="detail-info">
+                Meet out top photographers and collaborate <br />
+                with them on your projects
+              </p>
+              <button id="connect">Connect</button>
+            </div>
+          </div>
         </div>
-        <div class="middle">
-            <div class="container">
-                <div class="image">
-                    <img src="./images/ailbhe-flynn-jkZs3Oi9pq0-unsplash.jpg" alt="Girl with camera" class="middle-img">
-                </div>
-                <div class="detail">
-                    <h1 class="detail-heading">Meet the best !</h1>
-                    <p class="detail-info">Meet out top photographers and collaborate <br /> with them on your projects
-                    </p>
-                    <button id="connect">Connect</button>
-                </div>
+        <div class="container">
+          <div class="image">
+            <img
+              src="./images/emmanuel-gido-hty9mHHDTro-unsplash.jpg"
+              alt="Girl with camera"
+              class="middle-img"
+            />
+            <div class="detail">
+              <h1 class="detail-heading">Meet the best !</h1>
+              <p class="detail-info">
+                Meet out top photographers and collaborate <br />
+                with them on your projects
+              </p>
+              <button id="connect">Connect</button>
             </div>
-            <div class="container">
-                <div class="image">
-                    <img src="./images/emmanuel-gido-hty9mHHDTro-unsplash.jpg" alt="Girl with camera" class="middle-img">
-                </div>
-                <div class="detail">
-                    <h1 class="detail-heading">Meet the best !</h1>
-                    <p class="detail-info">Meet out top photographers and collaborate <br /> with them on your projects
-                    </p>
-                    <button id="connect">Connect</button>
-                </div>
-            </div>
-            <div class="container">
-                <div class="image">
-                    <img src="./images/jakob-owens-DQPP9rVLYGQ-unsplash.jpg" alt="Girl with camera" class="middle-img">
-                </div>
-                <div class="detail">
-                    <h1 class="detail-heading">Meet the best !</h1>
-                    <p class="detail-info">Meet out top photographers and collaborate <br /> with them on your projects
-                    </p>
-                    <button id="connect">Connect</button>
-                </div>
-            </div>
-            <div class="container">
-                <div class="image">
-                    <img src="./images/li-shanting-AGy0SxTzqr8-unsplash.jpg" alt="Girl with camera" class="middle-img">
-                </div>
-                <div class="detail">
-                    <h1 class="detail-heading">Meet the best !</h1>
-                    <p class="detail-info">Meet out top photographers and collaborate <br /> with them on your projects
-                    </p>
-                    <button id="connect">Connect</button>
-                </div>
-            </div>
-            <div class="container">
-                <div class="image">
-                    <img src="./images/nicolas-ladino-silva-o2DVsV2PnHE-unsplash.jpg" alt="Girl with camera" class="middle-img">
-                </div>
-                <div class="detail">
-                    <h1 class="detail-heading">Meet the best !</h1>
-                    <p class="detail-info">Meet out top photographers and collaborate <br /> with them on your projects
-                    </p>
-                    <button id="connect">Connect</button>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="container">
+          <div class="image">
+            <img
+              src="./images/jakob-owens-DQPP9rVLYGQ-unsplash.jpg"
+              alt="Girl with camera"
+              class="middle-img"
+            />
+            <div class="detail">
+              <h1 class="detail-heading">Meet the best !</h1>
+              <p class="detail-info">
+                Meet out top photographers and collaborate <br />
+                with them on your projects
+              </p>
+              <button id="connect">Connect</button>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="image">
+            <img
+              src="./images/li-shanting-AGy0SxTzqr8-unsplash.jpg"
+              alt="Girl with camera"
+              class="middle-img"
+            />
+            <div class="detail">
+              <h1 class="detail-heading">Meet the best !</h1>
+              <p class="detail-info">
+                Meet out top photographers and collaborate <br />
+                with them on your projects
+              </p>
+              <button id="connect">Connect</button>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="image">
+            <img
+              src="./images/nicolas-ladino-silva-o2DVsV2PnHE-unsplash.jpg"
+              alt="Girl with camera"
+              class="middle-img"
+            />
+            <div class="detail">
+              <h1 class="detail-heading">Meet the best !</h1>
+              <p class="detail-info">
+                Meet out top photographers and collaborate <br />
+                with them on your projects
+              </p>
+              <button id="connect">Connect</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
         <div class="social">
-            <div class="cover">
-                <div class="social-logo">
-                    <img src="./images/icons8-twitter.svg" alt="twitterlogo" class="logo">
-                </div>
-                <div class="social-logo">
-                    <img src="./images/icons8-instagram.svg" alt="instagramlogo" class="logo">
-                </div>
-            </div>
-            <div>
-                <div class="buttons">
-                    <img src="./images/Group 60.svg" alt="" srcset="" id="previous">
-                    <img src="./images/Group 59.svg" alt="" srcset="" id="next">
-                </div>
-            </div>
+          <div class="social-logo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24px"
+              height="24px"
+            >
+              <path
+                d="M 24 4.300781 C 23.101563 4.699219 22.199219 5 21.199219 5.101563 C 22.199219 4.5 23 3.5 23.398438 2.398438 C 22.398438 3 21.398438 3.398438 20.300781 3.601563 C 19.300781 2.601563 18 2 16.601563 2 C 13.898438 2 11.699219 4.199219 11.699219 6.898438 C 11.699219 7.300781 11.699219 7.699219 11.800781 8 C 7.699219 7.800781 4.101563 5.898438 1.699219 2.898438 C 1.199219 3.601563 1 4.5 1 5.398438 C 1 7.101563 1.898438 8.601563 3.199219 9.5 C 2.398438 9.398438 1.601563 9.199219 1 8.898438 C 1 8.898438 1 8.898438 1 9 C 1 11.398438 2.699219 13.398438 4.898438 13.800781 C 4.5 13.898438 4.101563 14 3.601563 14 C 3.300781 14 3 14 2.699219 13.898438 C 3.300781 15.898438 5.101563 17.300781 7.300781 17.300781 C 5.601563 18.601563 3.5 19.398438 1.199219 19.398438 C 0.800781 19.398438 0.398438 19.398438 0 19.300781 C 2.199219 20.699219 4.800781 21.5 7.5 21.5 C 16.601563 21.5 21.5 14 21.5 7.5 C 21.5 7.300781 21.5 7.101563 21.5 6.898438 C 22.5 6.199219 23.300781 5.300781 24 4.300781"
+              />
+            </svg>
+          </div>
+          <div class="social-logo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 26 26"
+              width="26px"
+              height="26px"
+            >
+              <path
+                d="M 7.546875 0 C 3.390625 0 0 3.390625 0 7.546875 L 0 18.453125 C 0 22.609375 3.390625 26 7.546875 26 L 18.453125 26 C 22.609375 26 26 22.609375 26 18.453125 L 26 7.546875 C 26 3.390625 22.609375 0 18.453125 0 Z M 7.546875 2 L 18.453125 2 C 21.527344 2 24 4.46875 24 7.546875 L 24 18.453125 C 24 21.527344 21.53125 24 18.453125 24 L 7.546875 24 C 4.472656 24 2 21.53125 2 18.453125 L 2 7.546875 C 2 4.472656 4.46875 2 7.546875 2 Z M 20.5 4 C 19.671875 4 19 4.671875 19 5.5 C 19 6.328125 19.671875 7 20.5 7 C 21.328125 7 22 6.328125 22 5.5 C 22 4.671875 21.328125 4 20.5 4 Z M 13 6 C 9.144531 6 6 9.144531 6 13 C 6 16.855469 9.144531 20 13 20 C 16.855469 20 20 16.855469 20 13 C 20 9.144531 16.855469 6 13 6 Z M 13 8 C 15.773438 8 18 10.226563 18 13 C 18 15.773438 15.773438 18 13 18 C 10.226563 18 8 15.773438 8 13 C 8 10.226563 10.226563 8 13 8 Z"
+              />
+            </svg>
+          </div>
         </div>
-    </section>
+        <div>
+          <div class="buttons">
+            <figure id="previous">
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 50 50"
+                fill="black"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <!-- <circle cx="25" cy="25" r="24" transform="rotate(-180 25 25)" stroke="white" stroke-width="2"/> -->
+                <path
+                  d="M19.998 25.2662L27.7858 33.0538C27.9659 33.234 28.2063 33.3333 28.4627 33.3333C28.7191 33.3333 28.9595 33.234 29.1397 33.0538L29.7132 32.4804C30.0864 32.1068 30.0864 31.4996 29.7132 31.1265L23.1736 24.587L29.7204 18.0402C29.9005 17.8599 30 17.6196 30 17.3634C30 17.1068 29.9005 16.8665 29.7204 16.6861L29.1469 16.1129C28.9667 15.9326 28.7264 15.8333 28.47 15.8333C28.2136 15.8333 27.9731 15.9326 27.793 16.1129L19.998 23.9076C19.8175 24.0884 19.7183 24.3299 19.7189 24.5865C19.7183 24.8442 19.8175 25.0855 19.998 25.2662Z"
+                />
+              </svg>
+            </figure>
+            <figure id="next">
+              <svg
+                width="50"
+                height="50"
+                viewBox="0 0 50 50"
+                fill="black"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M30.002 24.7338L22.2142 16.9462C22.0341 16.766 21.7937 16.6667 21.5373 16.6667C21.2809 16.6667 21.0405 16.766 20.8603 16.9462L20.2868 17.5196C19.9136 17.8932 19.9136 18.5004 20.2868 18.8735L26.8264 25.413L20.2796 31.9598C20.0995 32.1401 20 32.3804 20 32.6366C20 32.8932 20.0995 33.1335 20.2796 33.3139L20.8531 33.8871C21.0333 34.0674 21.2736 34.1667 21.53 34.1667C21.7864 34.1667 22.0269 34.0674 22.207 33.8871L30.002 26.0924C30.1825 25.9116 30.2817 25.6701 30.2811 25.4135C30.2817 25.1558 30.1825 24.9145 30.002 24.7338Z"
+                />
+              </svg>
+            </figure>
+          </div>
+        </div>
+      </footer>
+    </main>
 
     <script src="Sharpsnaps.js"></script>
-</body>
-
+  </body>
 </html>

@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;1,700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body .big-box {
+  width: inherit;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+body .big-box > * {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
+.big-box {
+  background: linear-gradient(150deg, #000000 30%, #ffffff 30.2% 63%, #000000 63.2%);
+  padding: 5% 5%;
+}
+
+.big-box .header {
+  height: 15%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.big-box .header-logo {
+  font-size: 4em;
+  font-weight: 700;
+}
+
+.big-box .header .nav {
+  color: black;
+  margin-left: auto;
+  font-size: large;
+}
+
+.big-box .header .nav .list {
+  padding-bottom: 4%;
+  position: relative;
+}
+
+.big-box .header .nav .list::before, .big-box .header .nav .list::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+  height: 0px;
+  background-color: black;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.big-box .header .nav .list::before {
+  left: 50%;
+}
+
+.big-box .header .nav .list::after {
+  right: 50%;
+}
+
+.big-box .header .nav .list:hover::before, .big-box .header .nav .list:hover::after {
+  width: 50%;
+  height: 1px;
+}
+
+.big-box .header .nav .hamburger {
+  display: none;
+}
+
+.big-box .gallery {
+  width: 100%;
+  height: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.big-box .gallery .container {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.big-box .gallery .container .detail {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px 0;
+  width: 100%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.big-box .gallery .container .detail #connect {
+  width: 50%;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  padding: 5px;
+  background-color: black;
+}
+
+.big-box .gallery .container .detail #connect:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+}
+
+.big-box .gallery .container .image {
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+  overflow: hidden;
+  border-radius: inherit;
+  position: relative;
+}
+
+.big-box .gallery .container .image img {
+  height: 100%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.big-box .gallery .container .image img:hover {
+  -webkit-filter: grayscale(10%);
+          filter: grayscale(10%);
+}
+
+.big-box .footer {
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.big-box .footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.big-box .footer .social-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 3vw;
+  height: 3vw;
+  background-color: black;
+}
+
+.big-box .footer .social-logo svg {
+  fill: white;
+}
+
+.big-box .footer .social-logo:hover {
+  background-color: white;
+}
+
+.big-box .footer .social-logo:hover svg {
+  fill: black;
+}
+
+.big-box .footer .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+}
+
+.big-box .footer .buttons > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid white;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+}
+
+.big-box .footer .buttons > * svg {
+  fill: white;
+}
+
+.big-box .footer .buttons > *:hover {
+  background-color: white;
+}
+
+.big-box .footer .buttons > *:hover svg {
+  fill: #000000;
+}
+
+@media all and (max-width: 1024px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+  .big-box {
+    padding: 5vw 5vw;
+  }
+  .big-box .header-logo {
+    font-size: 5vw;
+  }
+  .big-box .header .nav ul {
+    display: none;
+  }
+  .big-box .header .nav .hamburger {
+    display: block;
+    width: 10vw;
+    padding: 1vw;
+    background: black;
+    border: none;
+  }
+  .big-box .header .nav .hamburger svg {
+    fill: white;
+  }
+  .big-box .gallery {
+    height: 70%;
+  }
+  .big-box .gallery .container {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    max-width: 100%;
+  }
+  .big-box .gallery .container .detail-heading {
+    font-size: 8vw;
+  }
+  .big-box .gallery .container .detail-info {
+    color: white;
+    font-size: 4vw;
+  }
+  .big-box .gallery .container .image {
+    width: 100%;
+  }
+  .big-box .footer {
+    height: 15%;
+  }
+  .big-box .footer .social-logo {
+    width: 8vw;
+    height: 8vw;
+    border-color: white;
+  }
+  .big-box .footer .buttons > * {
+    width: 8vw;
+    height: 8vw;
+  }
+}
